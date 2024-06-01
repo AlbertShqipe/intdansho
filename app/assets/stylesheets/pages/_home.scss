@@ -1,4 +1,36 @@
 // Specific CSS for your home-page
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flexed-box {
+  flex: 1 1 0px;
+}
+
+.info-card {
+  height: 250px;
+  border: 1px solid #FFDE59;
+  padding: 8px 16px;
+  position: relative;
+  width: 30%;
+  background-color: #ffde59bc;
+
+  .tex {
+    color: #ffffff;
+    z-index: 100;
+  }
+  img {
+    width: 150px;
+    opacity: 0.5;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 20%;
+  }
+}
+
 h2 {
   color: #FFDE59;
   text-align: center;
