@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Intdansho</title>
+    <title>Ids</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: white;
+        height: 2000px;
+      }
+    </style>
   </head>
 
   <body>
+    <%= render partial:'layouts/shared/navbar' %>
     <%= yield %>
   </body>
 </html>
