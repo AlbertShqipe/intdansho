@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // select the div to reduce or augment the opacity based on the position of the scrollbar
     const logoDiv = this.document.getElementById('logo');
-    logoDiv.style.opacity = (-currScrollPos2 / 300 + 1);
+    if (logoDiv) {
+      logoDiv.style.opacity = (-currScrollPos2 / 300 + 1);
+    } else {
+      ''
+    }
 
     // get the navbar element
     const navbar = document.getElementById('navbar');
