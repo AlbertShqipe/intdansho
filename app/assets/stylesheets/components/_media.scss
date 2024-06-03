@@ -1,0 +1,169 @@
+.img-container {
+  margin-top:100px ;
+  position: relative;
+  background-color:rgba(0, 0, 0, 0.1) !important;
+  // padding-top:50px;
+  .img {
+    filter: grayscale(100%);
+  // transition: filter 0.9s ease;
+  &:hover {
+    cursor: pointer;
+    background-image: none;
+    // background-color: beige;
+    filter: grayscale(0%);
+    // width: 275px;
+    // height:375px;
+  }
+  }
+}
+
+.first-row {
+  display: flex;
+  vertical-align: top;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+
+  .div1 {
+    width: 30%;
+    height: 370px;
+    background-image: url('group.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .div2 {
+    width: 50%;
+    height: 270px;
+    background-image: url('groupStage.png');
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div3 {
+    width: 20%;
+    height: 270px;
+    background-image: url('groupTower.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+.second-row {
+  display: flex;
+  vertical-align: top;
+  justify-content: flex-start;
+  width:100%;
+  margin: auto;
+  overflow: auto;
+
+  .div1 {
+    width: 30%;
+    height: 200px;
+    background-image: url('groupArm.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div2 {
+    width: 70%;
+    height: 320px; /* Set height of the div */
+    background-image: url('group2.png'); /* Set the URL of the image */
+    background-size: cover; /* Adjusts the size of the background image to cover the entire div */
+    background-position: 20% 10%; /* Center the background image */
+    background-repeat: no-repeat;
+    justify-self: end;
+    position: absolute;
+    // margin: 3px;
+    margin: 0;
+    // top: 205px; // in case you put a margin of 5px around the images this distance from the top wioll be the right one.
+    top: 250px;
+    right: 0;
+  }
+
+  .div3 {
+    width: 20%;
+    height: 200px;
+    background-image: url('groupTower.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.third-row {
+  display: flex;
+  vertical-align: top;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+
+  .div1 {
+    width: 25%;
+    height: 250px;
+    background-image: url('groupView.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div2 {
+    width: 25%;
+    height: 250px;
+    background-image: url('sako&group.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div3 {
+    width: 25%;
+    height: 250px;
+    background-image: url('group.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div4 {
+    width: 25%;
+    height: 250px;
+    background-image: url('group1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
