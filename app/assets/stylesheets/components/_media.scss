@@ -6,14 +6,17 @@
   .img {
     filter: grayscale(100%);
   // transition: filter 0.9s ease;
-  &:hover {
-    cursor: pointer;
-    background-image: none;
-    // background-color: beige;
-    filter: grayscale(0%);
-    // width: 275px;
-    // height:375px;
+    &:hover {
+      cursor: pointer;
+      filter: grayscale(0%);
+      // background-color: beige;
+      filter: grayscale(0%);
+      // width: 275px;
+      // height:375px;
+    }
   }
+  @media (max-width:560px) {
+    display: none;
   }
 }
 
@@ -166,4 +169,19 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.container-image {
+  margin-top: 100px !important;
+  width: 90%;
+  margin: auto;
+
+  img {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.display-none {
+  display: none;
 }

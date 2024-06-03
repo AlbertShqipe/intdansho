@@ -5,7 +5,6 @@ import "@popperjs/core"
 import "bootstrap"
 
 document.addEventListener("DOMContentLoaded", function() {
-  var logo = document.getElementById('logo');
   // current code is used to get the current position of the scroll in the window
   window.addEventListener('scroll', function() {
     // get the current position of the window based on the scrolling
