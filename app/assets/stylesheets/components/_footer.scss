@@ -1,0 +1,49 @@
+/* Footer styles */
+.footer {
+  background-color: rgba(0, 0, 0, 1); /* Transparent background */
+  height: 40px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar appears above other content */
+  border-top: 0.5px solid rgb(246, 202, 46);
+  // position: fixed;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+.footer-home {
+  background-color: rgba(0, 0, 0, 1); /* Transparent background */
+  height: 40px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar appears above other content */
+  border-top: 1px solid rgb(246, 202, 46);
+}
+
+/* Container for the footer content */
+.footer-content {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 100%; /* Set container height to full height of the footer */
+
+  /* Styling for the text */
+  p {
+    text-align: center; /* Center-align text */
+    font-size: small; /* Adjust font size as needed */
+    margin: 0;
+  }
+
+  a {
+    font-size: medium; /* Adjust font size as needed */
+    color: rgb(246, 202, 46); /* Set text color to white */
+    &:hover {
+      color: rgb(255, 255, 255); /* Change text color on hover */
+    }
+  }
+
+}
