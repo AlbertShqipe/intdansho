@@ -181,6 +181,16 @@
     width: 350px;
     margin: 0;
     padding: 0;
+    filter: grayscale(100%);
+  // transition: filter 0.9s ease;
+    &:hover {
+      cursor: pointer;
+      filter: grayscale(0%);
+      // background-color: beige;
+      filter: grayscale(0%);
+      // width: 275px;
+      // height:375px;
+    }
   }
   @media (min-width: 760px) {
     display: none;
