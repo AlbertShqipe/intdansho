@@ -81,11 +81,22 @@ a {
 }
 
 .icons-contact span {
-
+  vertical-align: middle;
+  align-items: center;
+  line-height: 3.4;
+  margin-left: 10px;
   @media (max-width: 768px) {
-
+    vertical-align: middle;
+    align-items: center;
+    line-height: 1.4;
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
   @media (max-width: 576px) {
+    vertical-align: middle;
+    align-items: center;
+    line-height: 1.4;
+    margin-left: 10px;
     margin-bottom: 10px;
   }
 
@@ -96,26 +107,29 @@ a {
 
 .telephone {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
-  width: 400px;
-  height: 400px;
+  vertical-align: middle;
+  // width: 400px;
+  // height: 400px;
   text-align: center;
 }
 .email {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
-  width: 400px;
-  height: 400px;
+  vertical-align: middle;
+  // width: 400px;
+  // height: 400px;
   text-align: center;
 }
 
 .address {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
-  width: 400px;
-  height: 400px;
+  vertical-align: middle;
+  // width: 400px;
+  // height: 400px;
   text-align: center;
 }
