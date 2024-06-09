@@ -140,6 +140,9 @@
   opacity: 1 !important;
   z-index: 1000;
 
+  h3 {
+    color: #000000;
+  }
   .text {
     @media (max-width: 768px) {
       display: none;

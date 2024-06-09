@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
 
   get "accueil" => "pages#accueil"
-  get "services" => "pages#services"
-  get "media" => "pages#media"
+  get "prestations" => "pages#prestations"
+  get "gallerie" => "pages#gallerie"
   get "notrehistoire" => "pages#notrehistoire"
   get "contact" => "pages#contact"
+  get "notreequipe" => "pages#notreequipe"
+  get "cadeau" => "pages#cadeau"
 
   # Defines the root path route ("/")
   # root "posts#index"
