@@ -1,0 +1,121 @@
+a {
+  text-decoration: none;
+  color: rgb(246, 202, 46);
+}
+.contact-page {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.icons-contact {
+  i {
+    font-size: 50px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.icons-contact a {
+  color: rgb(246, 202, 46);
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 100;
+  margin-bottom: 8px;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  @media (max-width: 768px) {
+    color: rgb(246, 202, 46);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 8px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  @media (max-width: 576px) {
+    color: rgb(246, 202, 46);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 8px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.icons-contact span {
+
+  @media (max-width: 768px) {
+
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.telephone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
