@@ -12,7 +12,10 @@ Rails.application.routes.draw do
   get "contact" => "pages#contact"
   get "notreequipe" => "pages#notreequipe"
   get "cadeau" => "pages#cadeau"
-
+  get "animations" => "pages#animations"
+  get "coursdanse" => "pages#coursdanse"
+  get "animationsenfants" => "pages#animationsenfants"
+  get "cadeau" => "pages#cadeau"
   # Defines the root path route ("/")
   # root "posts#index"
 end

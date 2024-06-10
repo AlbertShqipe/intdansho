@@ -1,0 +1,23 @@
+.card-box-prestations {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .card-prestations {
+  border: 1px solid #FFDE59;
+  padding: 8px 16px;
+  position: relative;
+  width: auto;
+  height: 250px;
+  margin: 10px;
+
+  @media (max-width: 450px) {
+    height: 250px;
+    border: 1px solid #FFDE59;
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+}
