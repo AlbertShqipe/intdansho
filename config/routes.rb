@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get "accueil" => "pages#accueil"
   get "prestations" => "pages#prestations"
   get "gallerie" => "pages#gallerie"
-  get "notrehistoire" => "pages#notrehistoire"
+  get "nosfondateurs" => "pages#nosfondateurs"
   get "contact" => "pages#contact"
   get "notreequipe" => "pages#notreequipe"
   get "cadeau" => "pages#cadeau"

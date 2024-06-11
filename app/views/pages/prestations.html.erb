@@ -7,11 +7,41 @@
     <%= image_tag 'IDS1.png', class:"img-logo"%>
   <a href="/contact" class="button">NOUS CONTACTER</a>
 </div>
-<div class="container">
-  <div class="card-box-prestations">
-  <a href="animations"><h2 class="card-prestations">Animation dansante pour vos événements</h2></a>
-  <a href="coursdanse"><h2 class="card-prestations">COURS DE DANSE</h2></a>
-  <a href="animationsenfants"><h2 class="card-prestations">ANIMATION ENFANT</h2></a>
-  <a href="cadeau"><h2 class="card-prestations">CADEAU </h2></a>
+<div class="container card-box-prestations" style="margin-bottom:40px !important">
+  <div class="d-flex align-items-center info-card-prestations ">
+    <%= image_tag 'animationEnfants.png', class:'background-image-prestations' %>
+    <%= image_tag 'IDS1.png', class:'logo-card-prestations' %>
+    <div class="text-center m-auto tex-prestations">
+      <a href="animationsenfants">
+        <h3>ANIMATION ENFANT</h3>
+      </a>
+    </div>
+  </div>
+  <div class="d-flex align-items-center info-card-prestations ">
+    <%= image_tag 'coursDanse.png', class:'background-image-prestations' %>
+    <%= image_tag 'IDS1.png', class:'logo-card-prestations' %>
+    <div class="text-center m-auto tex-prestations">
+      <a href="coursdanse">
+        <h3>COURS DE DANSE</h3>
+      </a>
+    </div>
+  </div>
+  <div class="d-flex align-items-center info-card-prestations">
+    <%= image_tag 'group.png', class:'background-image-prestations' %>
+    <%= image_tag 'IDS1.png', class:'logo-card-prestations' %>
+    <div class="text-center m-auto tex-prestations">
+      <a href="animations">
+        <h3 style="padding-bottom:25px !important;">ANIMATION DANSANTE POUR VOS EVENMENT</h3>
+      </a>
+    </div>
+  </div>
+  <div class="d-flex align-items-center info-card-prestations">
+    <%= image_tag 'cadeau.png', class:'background-image-prestations' %>
+    <%= image_tag 'IDS1.png', class:'logo-card-prestations' %>
+    <div class="text-center m-auto tex-prestations">
+      <a href="cadeau">
+        <h3>CADEAU</h3>
+      </a>
+    </div>
   </div>
 </div>
