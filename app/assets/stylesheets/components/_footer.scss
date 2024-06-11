@@ -8,10 +8,11 @@
   width: 100%;
   z-index: 1000; /* Ensure navbar appears above other content */
   border-top: 0.5px solid rgb(246, 202, 46);
-  // position: fixed;
+  position: fixed;
   padding: 0;
   margin: 0;
   bottom: 0;
+  left: 0;
 }
 .footer-home {
   background-color: rgba(0, 0, 0, 1); /* Transparent background */
