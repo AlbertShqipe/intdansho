@@ -214,9 +214,38 @@ h3 {
   @media (max-width: 560px) {
     width: 100%;
   }
-
 }
 
-.m-b-80 {
-  margin-bottom: 80px;
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it covers other content */
+
+  @media (max-width: 560px){
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .img-logo-splash {
+    margin: auto;
+    display: block;
+    width: 500px;
+    margin:0  !important;
+
+    @media (max-width: 560px) {
+      width: 100%;
+    }
+  }
 }

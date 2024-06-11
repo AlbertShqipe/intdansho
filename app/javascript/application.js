@@ -48,3 +48,12 @@ document.addEventListener("DOMContentLoaded", function() {
     };
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      // Hide the splash screen
+      document.getElementById("splash-screen").style.display = "none";
+      // Show the main content
+      document.getElementById("main-content").style.display = "block";
+  }, 3000); // 3000 milliseconds = 3 seconds
+});
