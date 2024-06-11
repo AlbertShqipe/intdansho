@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get "coursdanse" => "pages#coursdanse"
   get "animationsenfants" => "pages#animationsenfants"
   get "cadeau" => "pages#cadeau"
+  get "sarkisgrigorian" => "pages#sarkisgrigorian"
   # Defines the root path route ("/")
   # root "posts#index"
 end

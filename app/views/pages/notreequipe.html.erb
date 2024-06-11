@@ -9,14 +9,32 @@
 </div>
 <div class="container">
   <h1>Nos professeurs :</h1>
-  <p>SARKIS GRIGORIAN, Danse Classique</p>
-  <p>DENIS LAMAJ, Danse Classique et Barre au Sol</p>
-  <p>GAEL ALAMARGOT, Danse Classique et contemporaine</p>
-  <p>PETROS CHROKOYAN, Danse Classique et Fitness Danse</p>
-  <p>NASIM, Breakdance et Hip Hop</p>
-  <p>ANAIS GRIGORIAN, Éveil / Initiation</p>
-  <p>ANNA GRIGORIAN, Danse Classique et Moderne</p>
-  <p>ALMENDRA, Danse Classique et Barre au Sol</p>
-  <p>TERESA GRIGORIAN, Danse du Monde</p>
-  <p>EUGENIEn Danse Classique et Initiation</p>
+  <% teachers = [
+                  { name: "SARKIS GRIGORIAN", position: "Danse Classique", picture: "sarkisPortrait.png" },
+                  { name: "DENIS LAMAJ", position: "Danse Classique et Barre au Sol", picture: "denisPortrait.png"},
+                  { name: "GAEL ALAMARGOT", position: "Danse Classique et contemporaine", picture: "gaelPortrait.png"},
+                  { name: "PETROS CHROKOYAN", position: "Danse Classique et Fitness Danse", picture: "petrosPortrait.png"},
+                  { name: "NASIM", position: "Breakdance et Hip Hop", picture: "nasim.png" },
+                  { name: "ANAIS GRIGORIAN", position: "Éveil / Initiation", picture: "anaisPortrait.png"},
+                  { name: "ANNA GRIGORIAN", position: "Danse Classique et Moderne", picture: "annaPortrait.png"},
+                  { name: "ALMENDRA", position: "Danse Classique et Barre au Sol", picture: "almendraPortrait.png"},
+                  { name: "TERESA GRIGORIAN", position: "Danse du Monde", picture: "teresaPortrait.png"},
+                  { name: "EUGENIE", position: "Danse Classique et Initiation", picture: "eugeniePortrait.png"}
+                ] %>
+  <section class="tiles">
+    <% teachers.each do |teacher| %>
+      <article class="style1">
+        <span class="image">
+          <%= image_tag(teacher[:picture]) %>
+        </span>
+        <a href="<%= teacher[:name].delete(' ').downcase  %>">
+          <h5 id="text-tiles"><%= teacher[:name] %></h5>
+          <br>
+          <div class="content">
+            <h5><%= teacher[:position] %></h5>
+          </div>
+        </a>
+      </article>
+    <% end %>
+  </section>
 </div>
