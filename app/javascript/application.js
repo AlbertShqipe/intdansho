@@ -50,10 +50,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-      // Hide the splash screen
-      document.getElementById("splash-screen").style.display = "none";
-      // Show the main content
-      document.getElementById("main-content").style.display = "block";
-  }, 3000); // 3000 milliseconds = 3 seconds
+  if (window.location.href == "https://www.internationaldanceshow.com/" ) {
+    setTimeout(function() {
+      // Redirect to the main content after 3 seconds
+      window.location.href = "https://www.internationaldanceshow.com/accueil";
+    }, 3000); // 3000 milliseconds = 3 seconds
+  } else {
+    ''
+  };
 });
