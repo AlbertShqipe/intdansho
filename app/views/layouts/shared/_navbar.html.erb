@@ -5,12 +5,18 @@
   </div>
   <div class="pages">
     <ul>
-      <a href="accueil"><li style="margin-right:10px;">ACCUEIL</li></a>
-      <a href="prestations"><li style="margin-right:10px;">PRESTATIONS</li></a>
-      <a href="gallerie"><li style="margin-right:10px;">GALLERIE</li></a>
-      <a href="notreequipe"><li style="margin-right:10px;">NOTRE EQUIPE</li></a>
+      <a href="/"><li style="margin-right:10px;">ACCUEIL</li></a>
+      <a href="/prestations"><li style="margin-right:10px;">PRESTATIONS</li></a>
+      <a href="/gallerie"><li style="margin-right:10px;">GALLERIE</li></a>
+      <a href="/notreequipe"><li style="margin-right:10px;">NOTRE EQUIPE</li></a>
       <%# <a href="notrehistoire"><li style="margin-right:10px;">NOTRE HISTOIRE</li></a> %>
-      <a href="contact"><li style="margin-right:10px;">CONTACT</li></a>
+      <a href="/contact"><li style="margin-right:10px;">CONTACT</li></a>
+      <% if user_signed_in? %>
+        <%= link_to 'TARIF', admin_tarif_path, style:"margin-right:10px;" %>
+        <%= button_to "Se déconnecter", destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to 'Se connecter', new_user_session_path %>
+      <% end %>
     </ul>
   </div>
   <div class="social">
@@ -44,6 +50,11 @@
     <a href="/notreequipe">NOTRE EQUIPE</a>
     <%# <a href="/notrehistoire">NOTRE HISTOIRE</a> %>
     <a href="/contact">CONTANCT</a>
+    <% if user_signed_in? %>
+      <%= link_to 'TARIF', admin_tarif_path %>
+    <% else %>
+      ''
+    <% end %>
   </div>
 </div>
 

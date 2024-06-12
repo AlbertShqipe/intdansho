@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  # Users routes
+  devise_for :users
+  get 'admin/tarif', to: 'admin#tarif'
+  # get '/users/sign_out', to: 'pages#accueil'
+
   # Professeurs routes
   get "notreequipe" => "professeurs#notreequipe"
   get "sarkisgrigorian" => "professeurs#sarkisgrigorian"
