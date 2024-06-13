@@ -52,7 +52,34 @@
   }
 }
 
+.sidenav button {
+  padding: 20px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(246, 202, 46);
+  display: block;
+  line-height: 1;
+  transition: 0.3s;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
 
+  @media (max-width: 450px) {
+    padding: 12px 10px 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(246, 202, 46);
+    display: block;
+    line-height: 1.63;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+
+  &:hover {
+  color: #f1f1f1 !important;
+  border-bottom: 0.5px solid rgb(246, 202, 46) !important;
+  }
+}
 
 .sidenav .closebtn {
   position: absolute;

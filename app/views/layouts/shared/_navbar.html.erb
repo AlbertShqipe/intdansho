@@ -13,9 +13,9 @@
       <a href="/contact"><li style="margin-right:10px;">CONTACT</li></a>
       <% if user_signed_in? %>
         <%= link_to 'TARIF', admin_tarif_path, style:"margin-right:10px;" %>
-        <%= button_to "Se déconnecter", destroy_user_session_path, method: :delete %>
+        <%= button_to "SE DÉCONNECTER", destroy_user_session_path, method: :delete, id:"log-out-btn" %>
       <% else %>
-        <%= link_to 'Se connecter', new_user_session_path %>
+        <%= link_to 'SE CONNECTER', new_user_session_path %>
       <% end %>
     </ul>
   </div>
@@ -51,9 +51,10 @@
     <%# <a href="/notrehistoire">NOTRE HISTOIRE</a> %>
     <a href="/contact">CONTANCT</a>
     <% if user_signed_in? %>
-      <%= link_to 'TARIF', admin_tarif_path %>
+      <%= link_to 'TARIF', admin_tarif_path, style:"margin-right:10px;" %>
+      <%= button_to "SE DÉCONNECTER", destroy_user_session_path, method: :delete %>
     <% else %>
-      ''
+      <%= link_to 'SE CONNECTER', new_user_session_path %>
     <% end %>
   </div>
 </div>
