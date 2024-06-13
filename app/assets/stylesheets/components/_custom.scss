@@ -8,24 +8,3 @@
 .user_email label{
   justify-content: left;
 }
-
-#log-in-btn {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(246, 202, 46);
-  margin-bottom: 15px;
-  &:hover {
-    background-color: rgb(246, 202, 46);
-    color: black;
-  }
-}
-
-#log-out-btn {
-  border: none;
-  background-color: black;
-  color: rgb(246, 202, 46);
-
-  &:hover {
-    color: #f1f1f1 !important;
-  }
-}
