@@ -51,10 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   if (window.location.href == "https://www.internationaldanceshow.com/" ) {
+    // if (window.location.href == "https://local/" ) {
     setTimeout(function() {
       // Redirect to the main content after 3 seconds
       window.location.href = "https://www.internationaldanceshow.com/accueil";
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }, 5000); // 3000 milliseconds = 3 seconds
   } else {
     ''
   };

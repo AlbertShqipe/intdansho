@@ -31,3 +31,18 @@
     }
   }
 }
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the element */
+.rotate {
+  display: inline-block; /* Ensure the element is inline-block or block */
+  animation: rotate360 5s linear infinite; /* Adjust the duration (2s) as needed */
+}
