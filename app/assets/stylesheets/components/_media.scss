@@ -199,3 +199,14 @@
 .display-none {
   display: none;
 }
+
+#video-1 {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 350px;
+
+  @media (max-width: 460px) {
+    width: 90%;
+  }
+}

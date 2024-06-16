@@ -10,7 +10,6 @@ class ProfesseursController < ApplicationController
       { name: "ANNA GRIGORIAN", position: "Danse Classique et Moderne", picture: "annaPortrait.png"},
       { name: "ALMENDRA", position: "Danse Classique et Barre au Sol", picture: "almendraPortrait.png"},
       { name: "TERESA GRIGORIAN", position: "Danse du Monde", picture: "teresaPortrait.png"},
-      { name: "EUGENIE", position: "Danse Classique et Initiation", picture: "eugeniePortrait.png"}
     ];
   end
 end
