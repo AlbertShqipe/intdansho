@@ -1,0 +1,22 @@
+.main-cadeau {
+  margin-top: 120px;
+  position:relative;
+
+  .logo-cadeau {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    opacity: 0.6;
+    width:500px;
+
+    @media (max-width: 460px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      opacity: 0.4;
+      width: 300px;
+    }
+  }
+}
