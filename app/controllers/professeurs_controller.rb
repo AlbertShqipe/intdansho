@@ -1,7 +1,7 @@
 class ProfesseursController < ApplicationController
   def notreequipe
     @teachers = teachers = [
-      { name: "SARKIS GRIGORIAN", position: "Danse Classique", picture: "sarkisPortrait.png" },
+      { name: "SARKIS GRIGORIAN", position: "Danse Classique", picture: "sako.png" },
       { name: "DENIS LAMAJ", position: "Danse Classique et Barre au Sol", picture: "denisPortrait.png"},
       { name: "GAEL ALAMARGOT", position: "Danse Classique et contemporaine", picture: "gaelPortrait.png"},
       { name: "PETROS CHROKOYAN", position: "Danse Classique et Fitness Danse", picture: "petrosPortrait.png"},
