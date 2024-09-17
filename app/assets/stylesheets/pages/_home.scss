@@ -109,6 +109,105 @@
     }
   }
 }
+.card-box-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  ///da controllare
+
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  // #card1 {
+  //   background-image: url('history.png');
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   opacity: 0.4;
+  // }
+
+  #card2 {
+    background-image: url('baby-ballerina.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  #card3 {
+    background-image: url('media.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  .info-card {
+    height: 250px;
+    border: 1px solid #FFDE59;
+    padding: 8px 16px;
+    position: relative;
+    width: 23%;
+
+    @media (max-width: 450px) {
+      height: 250px;
+      border: 1px solid #FFDE59;
+      position: relative;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .tex {
+      color: #FFDE59;
+      z-index: 100;
+      opacity: 1 !important;
+
+      a {
+        text-decoration: none;
+        color: #FFDE59;
+      }
+    }
+
+    .background-image {
+      filter: grayscale(100%);
+      width: 250px;
+      height: 150px;
+      opacity: 0.6;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+    }
+
+    .logo-card {
+      width: 150px;
+      opacity: 1 !important;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 80%;
+      left: 10%;
+      z-index: 2;
+
+      @media (max-width: 450px) {
+        width: 100px;
+        opacity: 1 !important;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 10%;
+        z-index: 2;
+      }
+    }
+  }
+}
 
 h3 {
   color: #FFDE59;

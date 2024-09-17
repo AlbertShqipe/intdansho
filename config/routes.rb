@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   # Users routes
   devise_for :users
-  get 'admin/tarif', to: 'admin#tarif'
   # get '/users/sign_out', to: 'pages#accueil'
 
   # Professeurs routes
@@ -26,6 +25,7 @@ Rails.application.routes.draw do
 
   # Pages routes
   get "accueil" => "pages#accueil"
+  get 'tarif', to: 'pages#tarif'
   get "prestations" => "pages#prestations"
   get "gallerie" => "pages#gallerie"
   get "nosfondateurs" => "pages#nosfondateurs"

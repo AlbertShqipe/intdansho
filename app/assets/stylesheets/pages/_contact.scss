@@ -133,3 +133,27 @@ a {
   // height: 400px;
   text-align: center;
 }
+
+.main-contact {
+  margin-top: 120px;
+  position:relative;
+
+  .logo-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    width:500px;
+    z-index: -1;
+
+    @media (max-width: 460px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      opacity: 0.4;
+      width: 300px;
+    }
+  }
+}

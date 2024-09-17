@@ -1,7 +1,7 @@
 .card-box-prestations {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 180px;
   margin-bottom: 20px;
 
   ///da controllare
@@ -84,4 +84,28 @@
 
 .m-b-80 {
   margin-bottom: 80px;
+}
+
+.main-prestation {
+  margin-top: 120px;
+  position:relative;
+
+  .logo-prestation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    width:500px;
+    z-index: -1;
+
+    @media (max-width: 460px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      opacity: 0.4;
+      width: 300px;
+    }
+  }
 }

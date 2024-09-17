@@ -1,0 +1,55 @@
+.main-fondateurs1 {
+  margin-top: 120px;
+  position:relative;
+
+  .logo-fondateurs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    width:500px;
+    z-index: -1;
+
+    @media (max-width: 460px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      opacity: 0.4;
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+
+.main-fondateurs2 {
+  margin-top: 120px;
+  position:relative;
+
+  .logo-fondateurs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    width:500px;
+    z-index: -1;
+
+    @media (max-width: 460px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.4;
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 460px) {
+    display: none;
+  }
+}
