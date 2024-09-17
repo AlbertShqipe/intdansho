@@ -14,8 +14,8 @@
       <a href="/notreequipe"><li style="margin-right:10px;">NOTRE EQUIPE</li></a>
       <%# <a href="notrehistoire"><li style="margin-right:10px;">NOTRE HISTOIRE</li></a> %>
       <a href="/contact"><li style="margin-right:10px;">CONTACT</li></a>
+      <%= link_to 'TARIF', admin_tarif_path, style:"margin-right:10px;" %>
       <% if user_signed_in? %>
-        <%= link_to 'TARIF', admin_tarif_path, style:"margin-right:10px;" %>
         <%= button_to "SE DÉCONNECTER", destroy_user_session_path, method: :delete, id:"log-out-btn" %>
       <% else %>
         <%= link_to 'SE CONNECTER', new_user_session_path %>
