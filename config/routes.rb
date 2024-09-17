@@ -35,6 +35,10 @@ Rails.application.routes.draw do
   get "coursdanse" => "pages#coursdanse"
   get "animationsenfants" => "pages#animationsenfants"
   get "cadeau" => "pages#cadeau"
+
+  # Contact routes
+  resources :contacts, only: [:new, :create, :destroy, :index]
+
   # Defines the root path route ("/")
   # root "posts#index"
 end

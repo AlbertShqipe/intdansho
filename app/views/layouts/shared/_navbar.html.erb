@@ -16,6 +16,7 @@
       <a href="/contact"><li style="margin-right:10px;">CONTACT</li></a>
       <%= link_to 'TARIF', tarif_path, style:"margin-right:10px;" %>
       <% if user_signed_in? %>
+      <a href="contacts"><li style="margin-right:10px;">SMS</li></a>
         <%= button_to "SE DÉCONNECTER", destroy_user_session_path, method: :delete, id:"log-out-btn" %>
       <% else %>
         <%= link_to 'SE CONNECTER', new_user_session_path %>

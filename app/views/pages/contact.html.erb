@@ -7,6 +7,26 @@
   <p class="p">Merci à vous.</p>
   <h3 >Équipe INTERNATIONAL DANCE SHOW</h3>
 </div>
+<div>
+  <%= form_with model: Contact.new, url: contacts_path, local: true do |form| %>
+    <div class="inp">
+      <%= form.text_field :name, required: true, placeholder: "Nom et Prénom*" %>
+    </div>
+
+    <div class="inp">
+      <%= form.email_field :email, required: true, placeholder: "Email*" %>
+    </div>
+
+    <div class="inp">
+      <%= form.text_area :message, required: true, placeholder: "Votre Message*" %>
+    </div>
+
+    <div class="inp-btn">
+      <%= form.submit "Submit" %>
+    </div>
+  <% end %>
+  <%= link_to "Contact Us", new_contact_path %>
+</div>
 <div class="icons-contact">
   <div class="telephone">
     <i class="bi bi-telephone"></i>

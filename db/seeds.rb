@@ -15,3 +15,7 @@ User.destroy_all
 puts 'Creating Users...'
 # Create a default user
 User.create!(email: 'internationaldanceshow@gmail.com', password: 'Sarkis2024', admin: true)
+
+puts 'Destroying Contacts...'
+# Destroy all existing records
+Contact.destroy_all
