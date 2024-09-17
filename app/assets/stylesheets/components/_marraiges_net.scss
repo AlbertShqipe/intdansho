@@ -1,0 +1,27 @@
+.marriagesNetNavbar {
+  position: absolute;
+  right: 35px;
+  top:55px;
+
+  img {
+    border-width: 0px;
+    width: 140px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+}
+
+.marriagesNetSidenav {
+  width: 90%;
+  margin: auto;
+  border-bottom:none !important ;
+  border-width: 0px;
+
+  img {
+    border-width: 0px;
+    width: 140px;
+  }
+}

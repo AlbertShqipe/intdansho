@@ -4,6 +4,7 @@
   height: 40px; /* Adjust height as needed */
   display: flex;
   justify-content: center;
+  flex-direction: column;
   vertical-align: middle;
   width: 100%;
   z-index: 1000; /* Ensure navbar appears above other content */
