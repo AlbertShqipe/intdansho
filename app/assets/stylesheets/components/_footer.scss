@@ -43,8 +43,19 @@
   a {
     font-size: medium; /* Adjust font size as needed */
     color: rgb(246, 202, 46); /* Set text color to white */
+    font-size: small;
     &:hover {
       color: rgb(255, 255, 255); /* Change text color on hover */
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    p {
+      font-size: x-small; /* Adjust font size for smaller devices */
+    }
+
+    a {
+      font-size: small; /* Adjust font size for smaller devices */
     }
   }
 
