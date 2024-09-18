@@ -23,12 +23,8 @@ class ContactsController < ApplicationController
 
   def destroy
     @contact = Contact.find(params[:id])
-
-    if @contact.destroy
-      redirect_to contacts_path, notice: "Contact supprimé avec succès."
-    else
-      redirect_to contacts_path, alert: "Le contact n'a pas pu être supprimé."
-    end
+    @contact.destroy
+    redirect_to contacts_path, notice: "Contact supprimé avec succès."
   end
 
   private
