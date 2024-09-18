@@ -1,14 +1,22 @@
 <div class="container" style="margin-top:150px">
   <h1 class="h1">MES MESSAGES</h1>
-  <% @contacts.each do |contact| %>
+  <% if @contacts.count < 1 %>
     <div class="portrait-contacts" >
       <div class="tex" >
-        <h2>Message <%= contact.id %></h2>
-        <h4>Name of user: <%= contact.name %></h4>
-        <h4>Email of user: <%= contact.email %></h4>
-        <p>Message of user: <br><%= contact.message %></p>
-        <%= link_to "Supprimer", contact, data: { turbo_method: :delete, confirm: "Are you sure?" }, class: "btn btn-danger" %>
+        <h2>Vous n'avez pas de messages</h2>
       </div>
     </div>
+  <% else %>
+    <% @contacts.each do |contact| %>
+      <div class="portrait-contacts" >
+        <div class="tex" >
+          <h2>Message <%= contact.id %></h2>
+          <h4>Name of user: <%= contact.name %></h4>
+          <h4>Email of user: <%= contact.email %></h4>
+          <p>Message of user: <br><%= contact.message %></p>
+          <%= link_to "Supprimer", contact, data: { turbo_method: :delete, confirm: "Are you sure?" }, class: "btn btn-danger" %>
+        </div>
+      </div>
+    <% end %>
   <% end %>
 </div>
