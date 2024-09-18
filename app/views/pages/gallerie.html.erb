@@ -1,32 +1,24 @@
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"> <%= image_tag "group.png" %></div>
-      <div class="swiper-slide"> <%= image_tag "groupStage.png" %></div>
-      <div class="swiper-slide"><%= image_tag 'groupView.png' %></div>
-      <div class="swiper-slide"><%= image_tag 'sako&group.png' %></div>
-      <div class="swiper-slide"><%= image_tag 'groupTower.png' %></div>
-      <div class="swiper-slide"><%= image_tag 'groupArm.png' %></div>
-      <div class="swiper-slide"><%= image_tag 'group2.png' %></div>
-      <div class="swiper-slide"><%= image_tag 'group1.png' %></div>
+<div class="container main-gallery">
+  <h1 class="h1">GALERIE</h1>
+  <div class="card-box-gallery">
+    <div class="d-flex align-items-center info-card ">
+      <img src="https://plus.unsplash.com/premium_photo-1675882505334-382d4cb3d718?q=80&w=2965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class='background-image' alt="">
+      <%= image_tag 'IDS1.png', class:'logo-card' %>
+      <div class="text-center m-auto tex">
+        <a href="images">
+          <h3>IMAGES</h3>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex align-items-center info-card ">
+      <img src="https://lightgenius.fr/wp-content/uploads/2023/02/logo-youtube-neon-led-mural.jpg" class='background-image' alt="">
+      <%= image_tag 'IDS1.png', class:'logo-card' %>
+      <div class="text-center m-auto tex">
+        <a href="videos">
+          <h3>VIDÉOS</h3>
+        </a>
+      </div>
     </div>
   </div>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
+  <%= image_tag "IDS1.png", class:"logo-gallery" %>
+</div>

@@ -33,6 +33,8 @@ Rails.application.routes.draw do
   get "coursdanse" => "pages#coursdanse"
   get "animationsenfants" => "pages#animationsenfants"
   get "cadeau" => "pages#cadeau"
+  get "videos" => "pages#videos"
+  get "images" => "pages#images"
 
   # Contact routes
   resources :contacts, only: [:new, :create, :index, :destroy]

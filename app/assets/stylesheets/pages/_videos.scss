@@ -1,0 +1,17 @@
+.videos-container {
+  text-align: center;
+  margin-top: 150px;
+
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+
+.videos-container-460 {
+  text-align: center;
+  margin-top: 150px;
+
+  @media (min-width: 460px) {
+    display: none;
+  }
+}
