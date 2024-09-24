@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   get "gaelalamargot" => "professeurs#gaelalamargot"
   get "petroschrokoyan" => "professeurs#petroschrokoyan"
   get "nasim" => "professeurs#nasim"
-  get "anaisgrigorian" => "professeurs#anaisgrigorian"
+  get "anaisgrigoriankotandjian" => "professeurs#anaisgrigorian"
   get "annagrigorian" => "professeurs#annagrigorian"
-  get "almendra" => "professeurs#almendra"
+  get "almendranavarro" => "professeurs#almendra"
   get "teresagrigorian" => "professeurs#teresagrigorian"
   get "eugenie" => "professeurs#eugenie"
 

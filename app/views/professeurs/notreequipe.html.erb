@@ -3,18 +3,18 @@
   <h1 class="h1">NOS PROFESSEURS ET CHORÉGRAPHES </h1>
   <section class="tiles">
     <% @teachers.each do |teacher| %>
-      <article class="style1">
-        <span class="image">
-          <%= image_tag(teacher[:picture]) %>
-        </span>
-        <a href="<%= teacher[:name].delete(' ').downcase  %>">
-          <h5 id="text-tiles"><%= teacher[:name] %></h5>
-          <br>
-          <div class="content">
-            <h5><%= teacher[:position] %></h5>
-          </div>
-        </a>
-      </article>
+        <article class="style1">
+          <span class="image">
+            <%= image_tag(teacher[:picture]) %>
+          </span>
+          <a href="<%= teacher[:name].delete(' ').downcase  %>">
+            <h5 id="text-tiles"><%= teacher[:name] %></h5>
+            <br>
+            <div class="content">
+              <h5><%= teacher[:position] %></h5>
+            </div>
+          </a>
+        </article>
     <% end %>
   </section>
 </div>
