@@ -71,6 +71,9 @@
         &:hover{
           color: white;
         }
+        @media (max-width: 1420px) {
+          font-size: 70% !important;
+        }
       }
     }
     @media (max-width: 768px) {
@@ -107,8 +110,6 @@
     @media (max-width: 576px) {
       display: none;
     }
-
-
   }
 
   #main {
@@ -200,6 +201,10 @@
 
         &:hover{
           color: white;
+        }
+
+        @media (max-width: 1420px) {
+          font-size: 70% !important;
         }
       }
     }
