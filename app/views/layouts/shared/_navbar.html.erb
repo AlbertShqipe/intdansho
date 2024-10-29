@@ -48,12 +48,12 @@
   </div>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/accueil">ACCUEUIL</a>
+    <a href="/accueil">ACCUEIL</a>
     <a href="/prestations">PRESTATIONS</a>
     <a href="/gallerie">GALERIE</a>
     <a href="/notreequipe">NOTRE EQUIPE</a>
     <%# <a href="/notrehistoire">NOTRE HISTOIRE</a> %>
-    <a href="/contact_us">CONTANCT</a>
+    <a href="/contact_us">CONTACT</a>
     <%= link_to 'TARIF', tarif_path, style:"margin-right:10px;" %>
     <% if user_signed_in? %>
       <%= link_to "SMS", contacts_path %>
