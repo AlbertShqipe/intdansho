@@ -37,8 +37,11 @@ Rails.application.routes.draw do
   get "images" => "pages#images"
 
   # Contact routes
-  resources :contacts, only: [:new, :create, :index, :destroy, :send_email]
-
+  resources :contacts, only: [:new, :create, :index, :destroy] do
+    collection do
+      post :send_email
+    end
+  end
   # Defines the root path route ("/")
   # root "posts#index"
 end
