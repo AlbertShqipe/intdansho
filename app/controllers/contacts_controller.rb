@@ -1,9 +1,13 @@
 class ContactsController < ApplicationController
   def send_email
-    contact_params = params.require(:contact).permit(:name, :email, :message)
+    # Ensure required params are present
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
 
-    if contact_params.values.all?(&:present?)
-      ContactMailer.contact_email(contact_params[:name], contact_params[:email], contact_params[:message]).deliver_now
+    if name.present? && email.present? && message.present?
+      # Use ActionMailer to send the email
+      ContactMailer.contact_email(name, email, message).deliver_now
       flash[:notice] = "Your message has been sent successfully!"
     else
       flash[:alert] = "All fields are required."
