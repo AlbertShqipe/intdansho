@@ -1,4 +1,4 @@
-<%= form_with url: contacts_path, method: :post, local: true do |f| %>
+<%= form_with url: send_email_contacts_path, method: :post, local: true do |f| %>
   <div class="inp">
     <%= f.text_field :name, required: true, placeholder: "Enter your name*" %>
   </div>
