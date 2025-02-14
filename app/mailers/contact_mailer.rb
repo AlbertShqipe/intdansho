@@ -8,7 +8,7 @@ class ContactMailer < ApplicationMailer
 
     mail(
       from: 'no-reply@internationaldanceshow.com',
-      subject: "Nouveau message de #{@name}, #{@email}"
+      subject: "Nouveau message de #{@name}, #{@email}",
       bcc: "albert_nikolli@icloud.com"
     )
   end
