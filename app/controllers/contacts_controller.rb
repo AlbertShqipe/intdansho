@@ -1,39 +1,18 @@
 class ContactsController < ApplicationController
-  before_action :authenticate_user!, except: [:new, :create]
-  before_action :check_if_admin, only: [:destroy, :index]
+  def send_email
+    # Ensure required params are present
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
 
-  def index
-    @contacts = Contact.all
-  end
-
-  def new
-    @contact = Contact.new
-  end
-
-  def create
-    @contact = Contact.new(contact_params)
-    logger.debug "Contact params: #{contact_params.inspect}" # Log for debugging
-
-    if @contact.save
-      redirect_to accueil_path, notice: "Votre message a été envoyé avec succès."
+    if name.present? && email.present? && message.present?
+      # Use ActionMailer to send the email
+      ContactMailer.contact_email(name, email, message).deliver_now
+      flash[:notice] = "Your message has been sent successfully!"
     else
-      render :new
+      flash[:alert] = "All fields are required."
     end
-  end
 
-  def destroy
-    @contact = Contact.find(params[:id])
-    @contact.destroy
-    redirect_to contacts_path, notice: "Contact supprimé avec succès."
-  end
-
-  private
-
-  def check_if_admin
-    redirect_to(accueil_path) unless current_user.admin?
-  end
-
-  def contact_params
-    params.require(:contact).permit(:name, :email, :message)
+    redirect_to root_path
   end
 end

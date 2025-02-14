@@ -1,0 +1,17 @@
+<%= form_with url: contacts_path, method: :post, local: true do |f| %>
+  <div class="inp">
+    <%= f.text_field :name, required: true, placeholder: "Enter your name*" %>
+  </div>
+
+  <div class="inp">
+    <%= f.email_field :email, required: true, placeholder: "Enter your email*" %>
+  </div>
+
+  <div class="inp">
+    <%= f.text_area :message, required: true, placeholder: "Enter your message*" %>
+  </div>
+
+  <div class="inp-btn">
+    <%= f.submit "Send Message" %>
+  </div>
+<% end %>
