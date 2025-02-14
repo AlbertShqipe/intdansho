@@ -13,6 +13,6 @@ class ContactsController < ApplicationController
       flash[:alert] = "All fields are required."
     end
 
-    redirect_to root_path
+    redirect_to accueil_path
   end
 end
