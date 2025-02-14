@@ -8,9 +8,9 @@ class ContactsController < ApplicationController
     if name.present? && email.present? && message.present?
       # Use ActionMailer to send the email
       ContactMailer.contact_email(name, email, message).deliver_now
-      flash[:notice] = "Your message has been sent successfully!"
+      flash[:notice] = "Votre email a été envoyé avec succès !"
     else
-      flash[:alert] = "All fields are required."
+      flash[:alert] = "Tous les champs sont requis."
     end
 
     redirect_to accueil_path
